@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+
+    <a href="javascript:void(0);" onclick="history.back();" class="close-btn" aria-label="Close and go back">
+        <i class="fas fa-times"></i>
+    </a>
+
+    <section id="prodetails" class="prodetails-section section-padding">
+  
+        <div class="single-pro-image">
+            <img src="img/bottles/glass2a.png" width="100%" id="main-image" alt="Product Main Image">
+            
+            <div class="small-image-group">
+                <div class="small-image-column active">
+                    <img src="img/bottles/glass2a.png" width="100%" class="small-image" alt="Blue variant">
+                </div>
+                <div class="small-image-column">
+                    <img src="img/bottles/PeachyGreen.png" width="100%" class="small-image" alt="Orange variant">
+                </div>
+                <div class="small-image-column">
+                    <img src="img/bottles/PeachyPurplee.png" width="100%" class="small-image" alt="Pink variant">
+                </div>
+                <div class="small-image-column">
+                    <img src="img/bottles/PeachyRed.png" width="100%" class="small-image" alt="Clear variant">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home / Glass</h6>
+            <h4>Peachy Keen</h4>
+            <h2 id="price-display">₱2199.00</h2>
+            
+            <div class="purchase-options">
+                <select id="size-select">
+                    <option value="12 oz" data-price="1699">12 oz</option>
+                    <option value="20 oz" data-price="2199" selected>20 oz</option>
+                    <option value="32 oz" data-price="2699">32 oz</option>
+                </select>
+                <div>
+                    <input type="number" id="product-quantity" value="1" min="1">
+                    <button class="normal unique-details-btn"
+                        id="single-add-btn"
+                        data-name="Peachy Keen"
+                        data-price="2199"
+                        data-image="img/bottles/glass2a.png.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+            <h4>Product Details</h4>
+            <span class="para">The Peachy Keen glass bottle is made from high-quality glass material. It features a durable construction perfect for daily use.</span>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <div id="toast-container"></div>
+</body>
+</html>

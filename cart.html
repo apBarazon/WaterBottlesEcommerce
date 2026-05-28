@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+</head>
+<body>
+
+ <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="cart"><a class="active" href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            
+            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+
+        </div>
+
+    </section>
+
+
+<section id="cart-page" class="section-p1">
+
+    <h2>Your Cart</h2>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-total">
+        <h3>Total: ₱<span id="cart-total">0</span></h3>
+    </div>
+
+</section>
+
+<section id="cart-add" class="section-p1">
+        
+    <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div class="coupon-form">
+            <input type="text" placeholder="Enter Your Coupon Code">
+            <button class="normal-btn">Apply</button>
+        </div>
+    </div>
+
+    <div id="subtotal-panel">
+        <h3>Cart Totals</h3>
+        <table>
+            <tr>
+                <td>Cart Subtotal</td>
+                <td>₱<span id="summary-subtotal">0.00</span></td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>₱<span id="summary-total">0.00</span></strong></td>
+            </tr>
+        </table>
+        
+        <button id="checkout-trigger" class="checkout-btn">
+            Proceed to Checkout <i class="fas fa-credit-card"></i>
+        </button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+<script>
+
+displayCart();
+
+
+
+
+</script>
+
+<div id="confirm-modal" class="modal-overlay">
+    <div class="modal-box">
+        <h3>Remove Item</h3>
+        <p id="confirm-modal-message">Are you sure you want to remove this item?</p>
+        <div class="modal-buttons">
+            <button id="modal-cancel-btn" class="modal-btn cancel">Cancel</button>
+            <button id="modal-confirm-btn" class="modal-btn confirm">Remove</button>
+        </div>
+    </div>
+</div>
+
+<div id="toast-container"></div>
+
+</body>
+</html>

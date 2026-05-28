@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce H2Go</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="cart"><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>#SHOP NOW</h2>
+        <p>From the gym to the office—stay cool with 70% off our best-selling series.</p>
+    </section>
+
+   
+    <div id="category-filter-container" class="section-p1">
+        <div class="search-box-container">
+            <input type="text" id="product-search" placeholder="Search products...">
+            <i class="far fa-search search-icon"></i>
+        </div>
+
+        <div class="filter-box active" data-target="all">
+            <h6>Show All</h6>
+        </div>
+        <div class="filter-box" data-target="metal">
+            <h6>Metal</h6>
+        </div>
+        <div class="filter-box" data-target="sports">
+            <h6>Sports</h6>
+        </div>
+        <div class="filter-box" data-target="glass">
+            <h6>Glass</h6>
+        </div>
+        <div class="filter-box" data-target="kids">
+            <h6>Kids</h6>
+        </div>
+        <div class="filter-box" data-target="insulated">
+            <h6>Thermal</h6>
+        </div>
+    </div>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            
+            <!-- 1. Trekker Tritan Clear (Sports) -->
+            <div class="pro sports"
+                 data-name="Trekker Tritan Clear (20 oz)"
+                 data-price="1999"
+                 data-image="img/bottles/sports1a.png"
+                 onclick="window.location.href='s1.html';">
+                <img src="img/bottles/sports1a.png" alt="">
+                <div class="des">
+                    <span>Plastic (Sport & Durable)</span>
+                    <h5>Trekker Tritan Clear <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱1999.00</h4>
+                </div>
+                <a href="#" class="add-cart">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+
+            <!-- 2. HydroGoal Chug (Sports) -->
+            <div class="pro sports" 
+                 data-name="HydroGoal Chug (20 oz)"
+                 data-price="2499"
+                 data-image="img/bottles/sports2a.png"
+                 onclick="window.location.href='s2.html';">
+                <img src="img/bottles/sports2a.png" alt="">
+                <div class="des">
+                    <span>Plastic (Sport)</span>
+                    <h5>HydroGoal Chug <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱2499.00</h4>
+                </div>
+                <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <!-- 3. Velocity Squeeze (Sports) -->
+            <div class="pro sports" 
+                 data-name="Velocity Squeeze (20 oz)"
+                 data-price="1499"
+                 data-image="img/bottles/sports3a.png"
+                 onclick="window.location.href='s3.html';">
+                <img src="img/bottles/sports3a.png" alt="">
+                <div class="des">
+                    <span>Plastic (Sport & Durable)</span>
+                    <h5>Velocity Squeeze <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱1499.00</h4>
+                </div>
+                <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <!-- 4. Sprint Pro (Sports) -->
+            <div class="pro sports" 
+                 data-name="Sprint Pro (20 oz)"
+                 data-price="2299"
+                 data-image="img/bottles/sports4a.png"
+                 onclick="window.location.href='s4.html';">
+                <img src="img/bottles/sports4a.png" alt="">
+                <div class="des">
+                    <span>Plastic (Sport & Durable)</span>
+                    <h5>Sprint Pro <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱2299.00</h4>
+                </div>
+                <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <!-- 5. Aura Glass (Glass) -->
+            <div class="pro glass" 
+                 data-name="Aura Glass (20 oz)"
+                 data-price="2500"
+                 data-image="img/bottles/glass1a.png"
+                 onclick="window.location.href='g1.html';">
+                <img src="img/bottles/glass1a.png" alt="">
+                <div class="des">
+                    <span>Glass (Clear)</span>
+                    <h5>Aura Glass <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱2500.00</h4>
+                </div>
+                <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <!-- 6. Peachy Keen (Glass) -->
+            <div class="pro glass" 
+                 data-name="Peachy Keen (20 oz)"
+                 data-price="2199"
+                 data-image="img/bottles/glass2a.png"
+                 onclick="window.location.href='g2.html';">
+                <img src="img/bottles/glass2a.png" alt="">
+                <div class="des">
+                    <span>Glass (Isolated)</span>
+                    <h5>Peachy Keen <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱2199.00</h4>
+                </div>
+                <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <!-- 7. Pure Bamboo (Glass) -->
+            <div class="pro glass" 
+                 data-name="Pure Bamboo (20 oz)"
+                 data-price="1499"
+                 data-image="img/bottles/glass3a.png"
+                 onclick="window.location.href='g3.html';">
+                <img src="img/bottles/glass3a.png" alt="">
+                <div class="des">
+                    <span>Glass (Matte-Finish)</span>
+                    <h5>Pure Bamboo <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱1499.00</h4>
+                </div>
+                <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <!-- 8. Limited Earth Clear (Glass) -->
+            <div class="pro glass" 
+                 data-name="Limited Earth Clear (20 oz)"
+                 data-price="1799"
+                 data-image="img/bottles/glass4a.png"
+                 onclick="window.location.href='g4.html';">
+                <img src="img/bottles/glass4a.png" alt="">
+                <div class="des">
+                    <span>Glass (Clear)</span>
+                    <h5>Limited Earth Clear <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱1799.00</h4>
+                </div>
+                <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+       
+            <!-- 9. Black Noir (Metal) -->
+            <div class="pro metal" 
+                 data-name="Black Noir (20 oz)"
+                 data-price="2500"
+                 data-image="img/bottles/metal1a.png"
+                 onclick="window.location.href='m1.html';">
+                <img src="img/bottles/metal1a.png" alt="">
+                <div class="des">
+                    <span>Metal (Durable)</span>
+                    <h5>Black Noir <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱2500.00</h4>
+                </div>
+                <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <!-- 10. Artic Chill (Metal) -->
+            <div class="pro metal" 
+                 data-name="Artic Chill (20 oz)"
+                 data-price="2500"
+                 data-image="img/bottles/metal2a.png"
+                 onclick="window.location.href='m2.html';">
+                <img src="img/bottles/metal2a.png" alt="">
+                <div class="des">
+                    <span>Metal (Durable)</span>
+                    <h5>Artic Chill <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱2500.00</h4>
+                </div>
+                <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <!-- 11. Rose Quartz (Metal) -->
+            <div class="pro metal" 
+                 data-name="Rose Quartz (20 oz)"
+                 data-price="2500"
+                 data-image="img/bottles/metal3a.png"
+                 onclick="window.location.href='m3.html';">
+                <img src="img/bottles/metal3a.png" alt="">
+                <div class="des">
+                    <span>Metal (Durable)</span>
+                    <h5>Rose Quartz <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱2500.00</h4>
+                </div>
+                <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <!-- 12. Desert Nomad (Metal) -->
+            <div class="pro metal" 
+                 data-name="Desert Nomad (20 oz)"
+                 data-price="2500"
+                 data-image="img/bottles/metal4a.png"
+                 onclick="window.location.href='m4.html';">
+                <img src="img/bottles/metal4a.png" alt="">
+                <div class="des">
+                    <span>Metal (Durable)</span>
+                    <h5>Desert Nomad <span style="font-size: 12px; color: #777;">(20 oz)</span></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₱2500.00</h4>
+                </div>
+                <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro kids" 
+                 data-name="Junior Jumper (20 oz)"
+                 data-price="1999"
+                 data-image="img/bottles/kids1.png"
+                 onclick="window.location.href='k1.html';">
+            <img src="img/bottles/kids1.png" alt="">
+            <div class="des">
+                <span>Kids (School Use)</span>
+                <h5>Junior Jumper</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h4>₱1999.00</h4>
+            </div>
+            <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro kids" 
+                 data-name="Cosmic Flow (20 oz)"
+                 data-price="2500"
+                 data-image="img/bottles/kids2.png"
+                 onclick="window.location.href='k2.html';">
+            <img src="img/bottles/kids2.png" alt="">
+            <div class="des">
+                <span>Kids (School Use)</span>
+                <h5>Cosmic Flow</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h4>₱2500.00</h4>
+            </div>
+            <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+         <div class="pro kids" 
+                 data-name="Spark Planet (20 oz)"
+                 data-price="2999"
+                 data-image="img/bottles/kids3.png"
+                 onclick="window.location.href='k3.html';">
+            <img src="img/bottles/kids3.png" alt="">
+            <div class="des">
+                <span>Kids (School Use)</span>
+                <h5>Spark Planet</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h4>₱2999.00</h4>
+            </div>
+            <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro kids" 
+                 data-name="Spark Sports (20 oz)"
+                 data-price="2499"
+                 data-image="img/bottles/kids4.png"
+                 onclick="window.location.href='k4.html';">
+                 <img src="img/bottles/kids4.png" alt="">
+            <div class="des">
+                <span>Kids (School Use)</span>
+                <h5>Spark Sports</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h4>₱2499.00</h4>
+            </div>
+            <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro insulated" 
+                 data-name="Stanley (20 oz)"
+                 data-price="1500"
+                 data-image="img/bottles/i3.png"
+                 onclick="window.location.href='i1.html';">
+                 <img src="img/bottles/i3.png" alt="">
+            <div class="des">
+                <span>Coffee Lovers</span>
+                <h5>Stanley</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h4>₱1500.00</h4>
+            </div>
+            <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro insulated" 
+                 data-name="Asobu (20 oz)"
+                 data-price="1500"
+                 data-image="img/bottles/st.png"
+                 onclick="window.location.href='st1.html';">
+                 <img src="img/bottles/st.png" alt="">
+            <div class="des">
+                <span>Coffee Lovers</span>
+                <h5>Asobu</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h4>₱1500.00</h4>
+            </div>
+            <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro insulated" 
+                 data-name="HydroMug (20 oz)"
+                 data-price="1500"
+                 data-image="img/bottles/mug1.png"
+                 onclick="window.location.href='mug1.html';">
+                 <img src="img/bottles/mug1.png" alt="">
+            <div class="des">
+                <span>Coffee Lovers</span>
+                <h5>HydroMug</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h4>₱1500.00</h4>
+            </div>
+            <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+         <div class="pro insulated" 
+                 data-name="S'well (20 oz)"
+                 data-price="1500"
+                 data-image="img/bottles/c1.png"
+                 onclick="window.location.href='c1.html';">
+                 <img src="img/bottles/c1.png" alt="">
+            <div class="des">
+                <span>Coffee Lovers</span>
+                <h5>S'well</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h4>₱1500.00</h4>
+            </div>
+            <a href="#" class="add-cart"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+            
+    </section>
+    
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1-footer">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 123 Corner Road, Street 24, Mabalacat</p>
+            <p><strong>Phone:</strong> +63 9533546165 / (09) 5335 46165</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secure Payment Gateway</p>
+            <img src="img/pay/onlinepay.png">
+        </div>
+
+        <div class="copyright">
+            <p>© 2026, APB - HTML CSS JS</p>
+        </div>
+    </footer>
+
+    
+    
+    <script src="script.js"></script>
+    <script>
+        const searchInput = document.getElementById('product-search');
+        const products = document.querySelectorAll('.pro');
+
+        searchInput.addEventListener('input', (e) => {
+            const searchValue = e.target.value.toLowerCase().trim();
+
+            products.forEach(product => {
+                const productName = product.getAttribute('data-name').toLowerCase();
+                
+                if (productName.includes(searchValue)) {
+                    product.style.display = "block";
+                } else {
+                    product.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <div id="toast-container"></div>
+</body>
+</html>
